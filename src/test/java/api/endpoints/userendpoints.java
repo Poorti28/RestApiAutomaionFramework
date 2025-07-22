@@ -18,7 +18,7 @@ public class userendpoints {
 		return response;
 	}
 	public static Response GetUser(String userName){
-		System.out.println("Get Data");
+		System.out.println("Get Data jenkins testing");
 		Response response = given()
 		.accept(ContentType.JSON)		
 		.pathParam("username", userName)
@@ -28,7 +28,7 @@ public class userendpoints {
 		return response;
 	}
 	public static Response PutUser(String userName, user payload){
-		System.out.println("Update Data");
+		System.out.println("Update Data testing jenkins");
 		Response response = given()
 		.accept(ContentType.JSON).contentType(ContentType.JSON)
 		.pathParam("username", userName)
